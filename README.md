@@ -126,9 +126,9 @@ This application adopts a single-file script (`app. Py`) architecture, suitable 
 3.  **Install dependencies**:
     All project dependencies are listed in the `requirements. Txt` file. Run the following command to install them:
     ```bash
-    Pip install -r requirements. Txt
+    Pip install -r requirements.txt
     ```
-    *If a `requirements. Txt` file is not present, install the dependencies manually based on the `import` statements in the code:*
+    *If a `requirements.txt` file is not present, install the dependencies manually based on the `import` statements in the code:*
     ```bash
     Pip install streamlit pandas plotly numpy
     ```
@@ -137,7 +137,7 @@ This application adopts a single-file script (`app. Py`) architecture, suitable 
 
 From the project root directory, execute the following command:
 ```bash
-Streamlit run app. Py
+Streamlit run app.py
 ```
 The application will automatically open in your default browser, typically at `http://localhost:8501`.
 
