@@ -88,8 +88,8 @@ This application adopts a single-file script (`SYPHU-CHINA iGEM - Inclusive Clin
 
 4.  **Main Application Logic (Tabs)**:
     *   `tab 1: Questionnaire Area`:
-        *   Conditionally renders the corresponding questionnaire step based on the value of `st. Session_state. Current_step`.
-        *   Each step is an independent `st. Form`, ensuring that data is captured as a whole when "Next" is clicked.
+        *   Conditionally renders the corresponding questionnaire step based on the value of `st.session_state.current_step`.
+        *   Each step is an independent `st.form`, ensuring that data is captured as a whole when "Next" is clicked.
         *   Navigation buttons (Previous/Next) control the flow by modifying the value of `current_step`.
     *   `tab 2: Live Dashboard`:
         *   Uses simulated data (`st.session_state.participants_data`) to generate statistical metrics and Plotly charts.
@@ -108,36 +108,36 @@ This application adopts a single-file script (`SYPHU-CHINA iGEM - Inclusive Clin
 
 1.  **Clone the repository**:
     ```bash
-    Git clone [Your Repository URL]
-    Cd [Project Directory]
+    git clone [Your Repository URL]
+    cd [Project Directory]
     ```
 
 2.  **Create and activate a virtual environment (recommended)**:
     ```bash
     # Windows
-    Python -m venv venv
-    Venv\Scripts\activate
+    python -m venv venv
+    venv\Scripts\activate
 
     # macOS / Linux
-    Python 3 -m venv venv
-    Source venv/bin/activate
+    python 3 -m venv venv
+    source venv/bin/activate
     ```
 
 3.  **Install dependencies**:
     All project dependencies are listed in the `requirements. txt` file. Run the following command to install them:
     ```bash
-    Pip install -r requirements.txt
+    pip install -r requirements.txt
     ```
     *If a `requirements.txt` file is not present, install the dependencies manually based on the `import` statements in the code:*
     ```bash
-    Pip install streamlit pandas plotly numpy
+    pip install streamlit pandas plotly numpy
     ```
 
 #### Running Locally
 
 From the project root directory, execute the following command:
 ```bash
-Streamlit run SYPHU-CHINA iGEM - Inclusive Clinical Research.py
+streamlit run SYPHU-CHINA iGEM - Inclusive Clinical Research.py
 ```
 The application will automatically open in your default browser, typically at `http://localhost:8501`.
 
