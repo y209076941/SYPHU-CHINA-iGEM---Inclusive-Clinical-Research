@@ -137,7 +137,7 @@ This application adopts a single-file script (`app. Py`) architecture, suitable 
 
 From the project root directory, execute the following command:
 ```bash
-Streamlit run app.py
+Streamlit run SYPHU-CHINA iGEM - Inclusive Clinical Research.py
 ```
 The application will automatically open in your default browser, typically at `http://localhost:8501`.
 
