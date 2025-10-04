@@ -68,14 +68,14 @@ The **SYPHU-CHINA iGEM team** aims to address this pain point through this platf
 *   **Core Framework**: [Streamlit](https://streamlit.io/) - A Python library for rapidly building interactive data applications.
 *   **Data Processing & Analysis**: [Pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/) - For structured data handling and numerical computation.
 *   **Data Visualization**: [Plotly Express](https://plotly.com/python/plotly-express/) & [Plotly Graph Objects](https://plotly.com/python/graph-objects/) - For creating rich, interactive charts.
-*   **Frontend Styling**: HTML/CSS - Injected via Streamlit's `st. Markdown` and `st. Components. V 1. Html` for custom interface styling and layout.
+*   **Frontend Styling**: HTML/CSS - Injected via Streamlit's `st.markdown` and `st.components.v1.html` for custom interface styling and layout.
 *   **Development Environment**: Python 3.8+
 
 ### 4. System Architecture & Code Structure
 
-This application adopts a single-file script (`app. Py`) architecture, suitable for rapid prototyping of Streamlit projects. Its internal logical structure is as follows:
+This application adopts a single-file script (`SYPHU-CHINA iGEM - Inclusive Clinical Research.py`) architecture, suitable for rapid prototyping of Streamlit projects. Its internal logical structure is as follows:
 
-1.  **Initialization & Configuration (`st. Set_page_config`, `st. Session_state`)**:
+1.  **Initialization & Configuration (`st.set_page_config`, `st.session_state`)**:
     *   Sets page metadata.
     *   Initializes session state variables, such as `language`, `current_step`, `form_data`, etc.
 
@@ -92,7 +92,7 @@ This application adopts a single-file script (`app. Py`) architecture, suitable 
         *   Each step is an independent `st. Form`, ensuring that data is captured as a whole when "Next" is clicked.
         *   Navigation buttons (Previous/Next) control the flow by modifying the value of `current_step`.
     *   `tab 2: Live Dashboard`:
-        *   Uses simulated data (`st. Session_state. Participants_data`) to generate statistical metrics and Plotly charts.
+        *   Uses simulated data (`st.session_state.participants_data`) to generate statistical metrics and Plotly charts.
     *   `tab 3: Research Transparency`:
         *   Displays static information and a simulated data export function.
 
@@ -124,7 +124,7 @@ This application adopts a single-file script (`app. Py`) architecture, suitable 
     ```
 
 3.  **Install dependencies**:
-    All project dependencies are listed in the `requirements. Txt` file. Run the following command to install them:
+    All project dependencies are listed in the `requirements. txt` file. Run the following command to install them:
     ```bash
     Pip install -r requirements.txt
     ```
