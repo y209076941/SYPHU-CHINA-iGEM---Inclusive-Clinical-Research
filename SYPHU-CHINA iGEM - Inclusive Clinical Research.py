@@ -680,8 +680,8 @@ with tab1:
                                                 ["Under 10k", "10k-30k", "30k-50k", "50k-100k", "Over 100k",
                                                  "Insurance Covered"])
 
-            col1, col2, col3 = st.columns([1, 2, 1])
-            with col3:
+            col1, col2, col3, col4, col5, col6, col7, col8, col9, col10, col11, col312, col13, col14, col15, col16, col17, col18, col19 = st.columns([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+            with col10:
                 if st.form_submit_button(f"**{texts['next']}**"):
                     st.session_state.current_step = 3
                     st.rerun()
@@ -718,8 +718,8 @@ with tab1:
 
             other_symptoms = st.text_area("Please describe any other symptoms:")
 
-            col1, col2, col3 = st.columns([1, 1, 1])
-            with col2:
+            col1, col2, col3, col4, col5, col6, col7, col8, col9, col10, col11, col312, col13, col14, col15, col16, col17, col18, col19 = st.columns([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+            with col10:
                 if st.form_submit_button(f"**{texts['next']}**"):
                     st.session_state.form_data['symptoms'] = {
                         'fatigue': fatigue,
@@ -772,8 +772,8 @@ with tab1:
 
             suggestions = st.text_area("Any suggestions for improving our research or this platform:")
 
-            col1, col2, col3 = st.columns([1, 1, 1])
-            with col2:
+            col1, col2, col3, col4, col5, col6, col7, col8, col9, col10, col11, col312, col13, col14, col15, col16, col17, col18, col19 = st.columns([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+            with col10:
                 if st.form_submit_button(f"**{texts['next']}**"):
                     st.session_state.form_data['research'] = {
                         'future_contact': future_contact,
