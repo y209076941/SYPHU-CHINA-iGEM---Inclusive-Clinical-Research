@@ -244,7 +244,7 @@ st.markdown("""
     /* 包容性设计配色 */
     :root {
         --primary-blue: #1f77b4;
-        --primary-green: #2ca02c;
+        --primary-green: #0FEE07;
         --primary-orange: #ff7f0e;
         --primary-red: #d62728;
         --primary-purple: #9467bd;
@@ -257,7 +257,7 @@ st.markdown("""
     }
 
     .inclusive-header {
-        background: linear-gradient(135deg, var(--primary-blue), var(--inclusion-teal), var(--primary-green));
+        background: linear-gradient(135deg, #CC6CE7, #060270, #5DE2E7);
         background-size: 400% 400%;
         animation: gradientShift 15s ease infinite;
         padding: 3rem 2rem;
@@ -527,8 +527,8 @@ with tab1:
 
             # 同意选项
             st.markdown("---")
-            col1, col2, col3 = st.columns([1, 2, 1])
-            with col2:
+            col1, col2, col3, col4, col5 = st.columns([1, 1, 2, 1, 1])
+            with col3:
                 c1, c2, c3 = st.columns([1, 2, 1])
                 with c2:
                     consent_1 = st.checkbox("**I understand the research purpose and process**", value=False)
@@ -544,8 +544,8 @@ with tab1:
             
             st.markdown("<br>", unsafe_allow_html=True)
 
-            col1, col2, col3, col4, col5 = st.columns([1, 1, 1, 1, 1])
-            with col3:
+            col1, col2, col3, col4, col5, col6, col7, col8, col9 = st.columns([1, 1, 1, 1, 1, 1, 1, 1, 1])
+            with col5:
                 if st.form_submit_button(f"**{texts['start_questionnaire']}**"):
                     if all([consent_1, consent_2, consent_3, consent_4]):
                         st.session_state.consent_given = True
